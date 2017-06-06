@@ -8,8 +8,11 @@ module.exports = function(config) {
     exclude: [
     ],
     files: [
-      'test/**/*-test.js',
+      // 'node_modules/babel-polyfill/dis/polyfill.js',
+      'node_modules/angular/angular.js',
+      'node_modules/angular-mocks/angular-mocks.js',
       'app/entry.js',
+      'test/**/*-test.js',
     ],
     preprocessors: {
       'app/entry.js': ['webpack'],

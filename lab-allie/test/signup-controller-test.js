@@ -1,11 +1,8 @@
 'use strict';
 
-const angular = require('angular');
-require('angular-mocks');
-
 describe('Testing the Home Controller', function() {
-  beforeEach(() => {
-    angular.mock.module('routesApp');
+  beforeEach(() => {  /* eslint-disable */
+    angular.mock.module('routesApp'); 
     angular.mock.inject(($rootScope, $controller) => {
       this.$rootScope = $rootScope;
       this.homeCtrl = new $controller('HomeController');
